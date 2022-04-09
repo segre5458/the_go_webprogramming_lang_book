@@ -6,9 +6,9 @@ import (
 	"strconv"
 )
 
-func main(){
+func main() {
 	s := ""
-	for i,val := range os.Args[1:] {
+	for i, val := range os.Args[1:] {
 		s = strconv.Itoa(i) + " : " + val
 		fmt.Println(s)
 	}
